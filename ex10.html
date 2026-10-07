@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exercise 10: Transitions & Micro-interactions by Alym Abylkasymov.">
+  <title>Exercise 10: Transitions &amp; Micro-interactions | Alym Abylkasymov</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Accessibility: Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <a href="../index.html" class="brand-logo" aria-label="Home">AA</a>
+        <div>
+          <span class="brand-title">CSS Practice Portfolio</span>
+          <p class="brand-subtitle">Student: Alym Abylkasymov</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../index.html#beginner" class="nav-link">Beginner</a></li>
+          <li><a href="../index.html#intermediate" class="nav-link active">Intermediate</a></li>
+          <li><a href="../index.html#challenging" class="nav-link">Challenging</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="site-main">
+    <div class="container">
+      
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="../index.html#intermediate">Intermediate</a>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">Exercise 10</span>
+      </nav>
+
+      <!-- Exercise Article -->
+      <article class="exercise-article">
+        <header class="exercise-header">
+          <div class="exercise-meta-top">
+            <span class="badge badge-intermediate">Intermediate</span>
+            <span class="exercise-num">Exercise 10</span>
+          </div>
+          <h1 class="exercise-title">Transitions &amp; Micro-interactions</h1>
+          <p class="exercise-desc">
+            Implementing fluid UI micro-interactions using CSS <code>transition</code> with custom easing curves (<code>cubic-bezier</code>), transform elevations, and dynamic icon rotation on hover.
+          </p>
+        </header>
+
+        <!-- Solution Code Section -->
+        <section aria-labelledby="code-heading">
+          <h2 id="code-heading" class="exercise-section-heading">Solution Code</h2>
+          <pre class="code-box"><code>/* Smooth Micro-interactions */
+.ex10-card {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.ex10-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+}
+
+.ex10-card:hover .ex10-icon {
+  transform: rotate(15deg) scale(1.15);
+}</code></pre>
+        </section>
+
+        <!-- Live Result Section -->
+        <section aria-labelledby="result-heading">
+          <h2 id="result-heading" class="exercise-section-heading">Live Result</h2>
+          <div class="demo-stage">
+            <div class="ex10-grid">
+              <div class="ex10-card">
+                <span class="ex10-icon" aria-hidden="true">&#9889;</span>
+                <h3>Lightning Fast</h3>
+                <p class="exercise-card-desc">Hover over this card to preview smooth spring elevation and icon scaling.</p>
+              </div>
+
+              <div class="ex10-card">
+                <span class="ex10-icon" aria-hidden="true">&#128737;</span>
+                <h3>Secure by Default</h3>
+                <p class="exercise-card-desc">CSS transitions deliver immediate tactile feedback to user interaction.</p>
+              </div>
+
+              <div class="ex10-card">
+                <span class="ex10-icon" aria-hidden="true">&#127760;</span>
+                <h3>Global CDN</h3>
+                <p class="exercise-card-desc">Zero JavaScript required for these performant hardware-accelerated animations.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <footer class="exercise-nav-bar">
+          <a href="ex9.html" class="btn-nav">&larr; Exercise 09</a>
+          <a href="../challenging/ex11.html" class="btn-nav">Exercise 11 (Challenging) &rarr;</a>
+        </footer>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Alym Abylkasymov. Week 3 CSS Practice.</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#main-content">Top &uarr;</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

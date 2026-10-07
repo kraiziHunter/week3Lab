@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exercise 05: Buttons & Interactive Links by Alym Abylkasymov.">
+  <title>Exercise 05: Buttons &amp; Interactive Links | Alym Abylkasymov</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Accessibility: Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <a href="../index.html" class="brand-logo" aria-label="Home">AA</a>
+        <div>
+          <span class="brand-title">CSS Practice Portfolio</span>
+          <p class="brand-subtitle">Student: Alym Abylkasymov</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../index.html#beginner" class="nav-link active">Beginner</a></li>
+          <li><a href="../index.html#intermediate" class="nav-link">Intermediate</a></li>
+          <li><a href="../index.html#challenging" class="nav-link">Challenging</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="site-main">
+    <div class="container">
+      
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="../index.html#beginner">Beginner</a>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">Exercise 05</span>
+      </nav>
+
+      <!-- Exercise Article -->
+      <article class="exercise-article">
+        <header class="exercise-header">
+          <div class="exercise-meta-top">
+            <span class="badge badge-beginner">Beginner</span>
+            <span class="exercise-num">Exercise 05</span>
+          </div>
+          <h1 class="exercise-title">Buttons &amp; Interactive Links</h1>
+          <p class="exercise-desc">
+            Constructing accessible, versatile button components: solid primary, outline, rounded pill styles, accompanied by keyboard focus indicators and tactile hover micro-interactions.
+          </p>
+        </header>
+
+        <!-- Solution Code Section -->
+        <section aria-labelledby="code-heading">
+          <h2 id="code-heading" class="exercise-section-heading">Solution Code</h2>
+          <pre class="code-box"><code>/* Reusable Button Variants */
+.ex5-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1.35rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.ex5-btn-primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.ex5-btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
+
+.ex5-btn-outline {
+  border: 1px solid var(--color-border);
+  background: transparent;
+}
+
+.ex5-btn-pill {
+  border-radius: 9999px;
+  background-color: var(--color-success);
+  color: #ffffff;
+}</code></pre>
+        </section>
+
+        <!-- Live Result Section -->
+        <section aria-labelledby="result-heading">
+          <h2 id="result-heading" class="exercise-section-heading">Live Result</h2>
+          <div class="demo-stage">
+            <div class="ex5-btn-group">
+              <button type="button" class="ex5-btn ex5-btn-primary">Primary Action</button>
+              <button type="button" class="ex5-btn ex5-btn-outline">Outline Secondary</button>
+              <button type="button" class="ex5-btn ex5-btn-pill">Pill Status Button</button>
+              <button type="button" class="ex5-btn ex5-btn-disabled" disabled>Disabled State</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <footer class="exercise-nav-bar">
+          <a href="ex4.html" class="btn-nav">&larr; Exercise 04</a>
+          <a href="../intermediate/ex6.html" class="btn-nav">Exercise 06 (Intermediate) &rarr;</a>
+        </footer>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Alym Abylkasymov. Week 3 CSS Practice.</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#main-content">Top &uarr;</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

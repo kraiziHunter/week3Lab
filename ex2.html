@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exercise 02: CSS Box Model & Sizing by Alym Abylkasymov.">
+  <title>Exercise 02: CSS Box Model &amp; Sizing | Alym Abylkasymov</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Accessibility: Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <a href="../index.html" class="brand-logo" aria-label="Home">AA</a>
+        <div>
+          <span class="brand-title">CSS Practice Portfolio</span>
+          <p class="brand-subtitle">Student: Alym Abylkasymov</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../index.html#beginner" class="nav-link active">Beginner</a></li>
+          <li><a href="../index.html#intermediate" class="nav-link">Intermediate</a></li>
+          <li><a href="../index.html#challenging" class="nav-link">Challenging</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="site-main">
+    <div class="container">
+      
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="../index.html#beginner">Beginner</a>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">Exercise 02</span>
+      </nav>
+
+      <!-- Exercise Article -->
+      <article class="exercise-article">
+        <header class="exercise-header">
+          <div class="exercise-meta-top">
+            <span class="badge badge-beginner">Beginner</span>
+            <span class="exercise-num">Exercise 02</span>
+          </div>
+          <h1 class="exercise-title">CSS Box Model &amp; Sizing</h1>
+          <p class="exercise-desc">
+            Visualizing the CSS Box Model architecture: Content, Padding, Border, and Margin, and illustrating how <code>box-sizing: border-box</code> provides predictable element dimensions.
+          </p>
+        </header>
+
+        <!-- Solution Code Section -->
+        <section aria-labelledby="code-heading">
+          <h2 id="code-heading" class="exercise-section-heading">Solution Code</h2>
+          <pre class="code-box"><code>/* Box Model Architecture */
+*, *::before, *::after {
+  box-sizing: border-box; /* Predictable sizing */
+}
+
+.box-element {
+  margin: 20px;       /* Outer spacing */
+  border: 4px solid;  /* Surrounding stroke */
+  padding: 24px;      /* Inner breathing space */
+  width: 100%;        /* Content area */
+}</code></pre>
+        </section>
+
+        <!-- Live Result Section -->
+        <section aria-labelledby="result-heading">
+          <h2 id="result-heading" class="exercise-section-heading">Live Result</h2>
+          <div class="demo-stage">
+            <div class="ex2-box-model-demo">
+              <div class="ex2-margin-layer">
+                <p class="ex2-layer-label">Margin (Outer Space - 20px)</p>
+                <div class="ex2-border-layer">
+                  <p class="ex2-layer-label">Border (4px Solid Stroke)</p>
+                  <div class="ex2-padding-layer">
+                    <p class="ex2-layer-label">Padding (Inner Gap - 24px)</p>
+                    <div class="ex2-content-layer">
+                      Content Box (Text / Elements)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <footer class="exercise-nav-bar">
+          <a href="ex1.html" class="btn-nav">&larr; Exercise 01</a>
+          <a href="ex3.html" class="btn-nav">Exercise 03 &rarr;</a>
+        </footer>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Alym Abylkasymov. Week 3 CSS Practice.</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#main-content">Top &uarr;</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

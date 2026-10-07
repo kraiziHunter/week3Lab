@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Week 3 CSS Basics Practice website presenting 15 exercises across Beginner, Intermediate, and Challenging levels. By Alym Abylkasymov.">
+  <title>Week 3 — CSS Practice Portfolio | Alym Abylkasymov</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessible Skip to Main Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Semantic Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <a href="index.html" class="brand-logo" aria-label="Home">AA</a>
+        <div>
+          <h1 class="brand-title">CSS Practice Portfolio</h1>
+          <p class="brand-subtitle">Web &amp; Internet Technologies — Week 3</p>
+        </div>
+      </div>
+
+      <!-- Student Name Badge Required Near Top -->
+      <div class="student-tag" aria-label="Student Information">
+        <span class="student-dot" aria-hidden="true"></span>
+        <span>Student: <strong>Alym Abylkasymov</strong></span>
+      </div>
+
+      <!-- Semantic Navigation -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="#beginner" class="nav-link">Beginner</a></li>
+          <li><a href="#intermediate" class="nav-link">Intermediate</a></li>
+          <li><a href="#challenging" class="nav-link">Challenging</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Semantic Main Content -->
+  <main id="main-content" class="site-main">
+    <div class="container">
+      
+      <!-- Hero Section -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <span class="hero-pill">Week 3 Assignment Showcase</span>
+        <h2 id="hero-title" class="hero-title">Mastering Modern CSS: 15 Hands-on Exercises</h2>
+        <p class="hero-description">
+          A modular collection of 15 practical CSS solutions demonstrating semantic HTML5, accessible interactions, Box Model fundamentals, Flexbox, and CSS Grid architectures.
+        </p>
+        <div class="student-card">
+          <span>Author &amp; Developer:</span>
+          <strong>Alym Abylkasymov</strong>
+          <span>•</span>
+          <span>Status: <strong>All 15 Completed</strong></span>
+        </div>
+      </section>
+
+      <!-- Category 1: Beginner (ex1 - ex5) -->
+      <section id="beginner" class="category-section" aria-labelledby="beginner-heading">
+        <div class="category-header">
+          <div class="category-title-group">
+            <h2 id="beginner-heading" class="category-title">1. Beginner Level</h2>
+            <span class="badge badge-beginner">5 Exercises</span>
+          </div>
+          <span class="category-count">Ex 01 — Ex 05</span>
+        </div>
+
+        <div class="exercise-grid">
+          <!-- Exercise 1 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 01</span>
+            <h3 class="exercise-card-title">Typography &amp; Text Styling</h3>
+            <p class="exercise-card-desc">
+              Explores font hierarchies, line-height, letter-spacing, text transformations, and system font stacks.
+            </p>
+            <a href="beginner/ex1.html" class="exercise-card-link">View Exercise 1 &rarr;</a>
+          </article>
+
+          <!-- Exercise 2 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 02</span>
+            <h3 class="exercise-card-title">CSS Box Model &amp; Sizing</h3>
+            <p class="exercise-card-desc">
+              Demonstrates box-sizing: border-box, content, padding, border, and margin layering.
+            </p>
+            <a href="beginner/ex2.html" class="exercise-card-link">View Exercise 2 &rarr;</a>
+          </article>
+
+          <!-- Exercise 3 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 03</span>
+            <h3 class="exercise-card-title">CSS Selectors &amp; Specificity</h3>
+            <p class="exercise-card-desc">
+              Covers pseudo-classes (:first-child, :nth-child, :hover) and attribute selectors in practice.
+            </p>
+            <a href="beginner/ex3.html" class="exercise-card-link">View Exercise 3 &rarr;</a>
+          </article>
+
+          <!-- Exercise 4 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 04</span>
+            <h3 class="exercise-card-title">Colors, Gradients &amp; Backgrounds</h3>
+            <p class="exercise-card-desc">
+              Showcases HSL color functions, multi-stop linear gradients, radial accents, and background management.
+            </p>
+            <a href="beginner/ex4.html" class="exercise-card-link">View Exercise 4 &rarr;</a>
+          </article>
+
+          <!-- Exercise 5 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 05</span>
+            <h3 class="exercise-card-title">Buttons &amp; Interactive Links</h3>
+            <p class="exercise-card-desc">
+              Implements accessible buttons with primary, outline, pill variants and smooth hover micro-transitions.
+            </p>
+            <a href="beginner/ex5.html" class="exercise-card-link">View Exercise 5 &rarr;</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Category 2: Intermediate (ex6 - ex10) -->
+      <section id="intermediate" class="category-section" aria-labelledby="intermediate-heading">
+        <div class="category-header">
+          <div class="category-title-group">
+            <h2 id="intermediate-heading" class="category-title">2. Intermediate Level</h2>
+            <span class="badge badge-intermediate">5 Exercises</span>
+          </div>
+          <span class="category-count">Ex 06 — Ex 10</span>
+        </div>
+
+        <div class="exercise-grid">
+          <!-- Exercise 6 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 06</span>
+            <h3 class="exercise-card-title">Flexbox Navigation Bar</h3>
+            <p class="exercise-card-desc">
+              Responsive horizontal navbar with brand logo, nav links, and call-to-action button aligned via Flexbox.
+            </p>
+            <a href="intermediate/ex6.html" class="exercise-card-link">View Exercise 6 &rarr;</a>
+          </article>
+
+          <!-- Exercise 7 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 07</span>
+            <h3 class="exercise-card-title">Responsive Pricing Cards</h3>
+            <p class="exercise-card-desc">
+              Multi-column pricing tier cards utilizing flex-grow, flex-basis, equal heights, and a featured card state.
+            </p>
+            <a href="intermediate/ex7.html" class="exercise-card-link">View Exercise 7 &rarr;</a>
+          </article>
+
+          <!-- Exercise 8 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 08</span>
+            <h3 class="exercise-card-title">CSS Positioning &amp; Badges</h3>
+            <p class="exercise-card-desc">
+              Demonstrates relative, absolute, and sticky positioning techniques for badges, overlays, and ribbons.
+            </p>
+            <a href="intermediate/ex8.html" class="exercise-card-link">View Exercise 8 &rarr;</a>
+          </article>
+
+          <!-- Exercise 9 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 09</span>
+            <h3 class="exercise-card-title">Accessible Form Controls</h3>
+            <p class="exercise-card-desc">
+              Custom-styled form inputs, labels, and checkboxes with WCAG-compliant visible focus rings.
+            </p>
+            <a href="intermediate/ex9.html" class="exercise-card-link">View Exercise 9 &rarr;</a>
+          </article>
+
+          <!-- Exercise 10 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 10</span>
+            <h3 class="exercise-card-title">Transitions &amp; Micro-interactions</h3>
+            <p class="exercise-card-desc">
+              Interactive 3D elevation effects, smooth cubic-bezier transitions, and rotating icon states.
+            </p>
+            <a href="intermediate/ex10.html" class="exercise-card-link">View Exercise 10 &rarr;</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Category 3: Challenging (ex11 - ex15) -->
+      <section id="challenging" class="category-section" aria-labelledby="challenging-heading">
+        <div class="category-header">
+          <div class="category-title-group">
+            <h2 id="challenging-heading" class="category-title">3. Challenging Level</h2>
+            <span class="badge badge-challenging">5 Exercises</span>
+          </div>
+          <span class="category-count">Ex 11 — Ex 15</span>
+        </div>
+
+        <div class="exercise-grid">
+          <!-- Exercise 11 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 11</span>
+            <h3 class="exercise-card-title">CSS Grid Portfolio Gallery</h3>
+            <p class="exercise-card-desc">
+              Masonry-style photo showcase using CSS Grid column and row spans, repeat(), and minmax() properties.
+            </p>
+            <a href="challenging/ex11.html" class="exercise-card-link">View Exercise 11 &rarr;</a>
+          </article>
+
+          <!-- Exercise 12 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 12</span>
+            <h3 class="exercise-card-title">Holy Grail Layout (Grid)</h3>
+            <p class="exercise-card-desc">
+              Classic Header, Nav, Main, Aside, and Footer responsive layout implemented with grid-template-areas.
+            </p>
+            <a href="challenging/ex12.html" class="exercise-card-link">View Exercise 12 &rarr;</a>
+          </article>
+
+          <!-- Exercise 13 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 13</span>
+            <h3 class="exercise-card-title">Responsive Dashboard Grid</h3>
+            <p class="exercise-card-desc">
+              Analytics metrics cards layout with auto-fit columns that seamlessly adapt from mobile to wide screens.
+            </p>
+            <a href="challenging/ex13.html" class="exercise-card-link">View Exercise 13 &rarr;</a>
+          </article>
+
+          <!-- Exercise 14 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 14</span>
+            <h3 class="exercise-card-title">Pure CSS Interactive Accordion</h3>
+            <p class="exercise-card-desc">
+              Collapsible FAQ accordion built strictly with semantic details &amp; summary elements and smooth CSS styling.
+            </p>
+            <a href="challenging/ex14.html" class="exercise-card-link">View Exercise 14 &rarr;</a>
+          </article>
+
+          <!-- Exercise 15 -->
+          <article class="exercise-card">
+            <span class="exercise-card-num">EXERCISE 15</span>
+            <h3 class="exercise-card-title">Theme Switcher &amp; Dark Mode</h3>
+            <p class="exercise-card-desc">
+              Comprehensive color token system featuring prefers-color-scheme dark mode support without JavaScript.
+            </p>
+            <a href="challenging/ex15.html" class="exercise-card-link">View Exercise 15 &rarr;</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Aside Section for Best Practices & Specifications -->
+      <aside class="home-info-section" aria-labelledby="specs-heading">
+        <div class="info-card">
+          <h3 id="specs-heading">Project Specifications &amp; Standards</h3>
+          <p class="exercise-card-desc">
+            This project fulfills all criteria of the Web &amp; Internet Technologies Week 3 CSS assignment:
+          </p>
+          <ul class="checklist">
+            <li><span class="check-icon">&#10003;</span> Strict Semantic HTML5 (header, nav, main, section, article, aside, footer).</li>
+            <li><span class="check-icon">&#10003;</span> Zero inline styles — 100% external modular CSS in <code>css/styles.css</code>.</li>
+            <li><span class="check-icon">&#10003;</span> Responsive at all breakpoints (320px mobile to 1440px desktop).</li>
+            <li><span class="check-icon">&#10003;</span> Full accessibility support: skip links, focus states, WCAG contrast.</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>Submission Details</h3>
+          <ul class="checklist">
+            <li><strong>Student:</strong> Alym Abylkasymov</li>
+            <li><strong>Week:</strong> 3 (CSS Practice)</li>
+            <li><strong>Files:</strong> 15 Exercise Pages + Index</li>
+            <li><strong>ZIP Name:</strong> <code>week3-css-practice-abylkasymov-alym.zip</code></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Semantic Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Alym Abylkasymov. All rights reserved. Web &amp; Internet Technologies.</p>
+      <ul class="footer-links">
+        <li><a href="#beginner">Beginner</a></li>
+        <li><a href="#intermediate">Intermediate</a></li>
+        <li><a href="#challenging">Challenging</a></li>
+        <li><a href="#main-content">Back to Top &uarr;</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

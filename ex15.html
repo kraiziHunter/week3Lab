@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exercise 15: Dark Mode Theme Showcase by Alym Abylkasymov.">
+  <title>Exercise 15: Dark Mode Theme Showcase | Alym Abylkasymov</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Accessibility: Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <a href="../index.html" class="brand-logo" aria-label="Home">AA</a>
+        <div>
+          <span class="brand-title">CSS Practice Portfolio</span>
+          <p class="brand-subtitle">Student: Alym Abylkasymov</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../index.html#beginner" class="nav-link">Beginner</a></li>
+          <li><a href="../index.html#intermediate" class="nav-link">Intermediate</a></li>
+          <li><a href="../index.html#challenging" class="nav-link active">Challenging</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="site-main">
+    <div class="container">
+      
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="../index.html#challenging">Challenging</a>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">Exercise 15</span>
+      </nav>
+
+      <!-- Exercise Article -->
+      <article class="exercise-article">
+        <header class="exercise-header">
+          <div class="exercise-meta-top">
+            <span class="badge badge-challenging">Challenging</span>
+            <span class="exercise-num">Exercise 15</span>
+          </div>
+          <h1 class="exercise-title">Theme System &amp; Dark Mode</h1>
+          <p class="exercise-desc">
+            Architecting a centralized CSS design token palette using CSS Custom Properties and automatic dark mode synchronization via <code>@media (prefers-color-scheme: dark)</code> without any client-side JavaScript.
+          </p>
+        </header>
+
+        <!-- Solution Code Section -->
+        <section aria-labelledby="code-heading">
+          <h2 id="code-heading" class="exercise-section-heading">Solution Code</h2>
+          <pre class="code-box"><code>/* Theme Token Architecture */
+:root {
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text-main: #0f172a;
+}
+
+/* Automatic Dark Mode Media Query */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0b0f19;
+    --color-surface: #131b2e;
+    --color-text-main: #f8fafc;
+  }
+}</code></pre>
+        </section>
+
+        <!-- Live Result Section -->
+        <section aria-labelledby="result-heading">
+          <h2 id="result-heading" class="exercise-section-heading">Live Result</h2>
+          <div class="demo-stage">
+            <p style="margin-bottom: 1rem; font-weight: 600;">Active Design Tokens (Adapts to your System OS Light/Dark Preference):</p>
+            <div class="ex15-palette">
+              <div class="ex15-token" style="background-color: var(--color-bg); color: var(--color-text-main);">
+                <div class="ex15-token-title">Background</div>
+                <div class="ex15-token-sub">--color-bg</div>
+              </div>
+
+              <div class="ex15-token" style="background-color: var(--color-surface); color: var(--color-text-main);">
+                <div class="ex15-token-title">Surface Card</div>
+                <div class="ex15-token-sub">--color-surface</div>
+              </div>
+
+              <div class="ex15-token" style="background-color: var(--color-primary); color: #ffffff;">
+                <div class="ex15-token-title">Primary Accent</div>
+                <div class="ex15-token-sub">--color-primary</div>
+              </div>
+
+              <div class="ex15-token" style="background-color: var(--color-surface-alt); color: var(--color-text-muted);">
+                <div class="ex15-token-title">Muted Surface</div>
+                <div class="ex15-token-sub">--color-surface-alt</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <footer class="exercise-nav-bar">
+          <a href="ex14.html" class="btn-nav">&larr; Exercise 14</a>
+          <a href="../index.html" class="btn-nav">&#127968; Back to Portfolio Home</a>
+        </footer>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Alym Abylkasymov. Week 3 CSS Practice.</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#main-content">Top &uarr;</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
